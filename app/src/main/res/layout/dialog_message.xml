@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corner_bg"
+    android:paddingBottom="16dip">
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_action_emo_basic"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/dialog_txt_content"
+        android:layout_alignStart="@+id/dialog_txt_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+
+    <TextView
+        android:id="@+id/dialog_txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载失败，请重试"
+        android:maxLines="3"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_centerInParent="true"
+        />
+
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#f00"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/dialog_img"
+        android:layout_toRightOf="@+id/dialog_img"
+        android:layout_toEndOf="@+id/dialog_img" />
+
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/dialog_btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   取消   "
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:background="@drawable/dialog_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/dialog_btn_comfirm"
+            android:layout_toStartOf="@+id/dialog_btn_comfirm"
+             />
+
+
+        <TextView
+            android:id="@+id/dialog_btn_comfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   确定   "
+            android:gravity="center"
+            android:background="@drawable/dialog_bg"
+            android:textColor="#FFF"
+            android:paddingBottom="6dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dip"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
